@@ -12,112 +12,84 @@ hr {
 header {
   background-color: #F5028a; }
 
-nav {
-  width: 100%;
-  height: 150px; }
-  nav .menuup {
+@media (min-width: 320px) {
+  nav {
+    width: 100%;
+    height: 130px; } }
+
+@media (min-width: 768px) {
+  nav {
+    width: 100%;
+    height: 130px; } }
+
+@media (min-width: 1024px) {
+  nav {
+    width: 100%;
+    height: 150px; } }
+
+nav .menuup {
+  background-color: black;
+  height: 90px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; }
+  nav .menuup .logo {
     background-color: black;
-    height: 90px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center; }
-    nav .menuup .logo {
-      background-color: black;
-      display: flex;
-      width: 20%;
-      justify-content: center;
-      align-items: center; }
-      nav .menuup .logo img {
-        height: 90%;
-        width: auto; }
-  @media (min-width: 320px) {
-    nav .menuphone {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto; } }
-  @media (min-width: 768px) {
-    nav .menuphone {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: auto; } }
-  nav .menuphone:hover > .menu-hover {
-    display: block; }
-  nav .menuphone li {
-    list-style: none;
-    margin: 0; }
-  nav .menuphone .menu-hover {
-    display: none;
-    background-color: #F5028a;
-    z-index: 1000;
-    width: 30%; }
-    nav .menuphone .menu-hover li {
-      margin: 20px;
-      color: white;
-      list-style: none; }
-      nav .menuphone .menu-hover li:hover > ul {
-        display: block;
-        position: absolute;
-        z-index: 1999;
-        background-color: black; }
-      nav .menuphone .menu-hover li a {
-        letter-spacing: 4px;
-        list-style: none;
-        text-decoration: none;
-        font-size: 17px;
-        font-family: hermanoalto;
-        color: white;
-        display: block;
-        text-align: center;
-        width: auto; }
-        nav .menuphone .menu-hover li a:active {
-          color: black; }
-      nav .menuphone .menu-hover li ul {
-        background-color: #F5028a;
-        display: none;
-        list-style: none;
-        margin: 0;
-        padding: 2px; }
-      nav .menuphone .menu-hover li li {
-        margin: 2px;
-        width: auto; }
-        nav .menuphone .menu-hover li li:hover {
-          color: #F5028a; }
-      nav .menuphone .menu-hover li a {
-        font-family: helvetica;
-        letter-spacing: 2px; }
-  @media (min-width: 1024px) {
-    nav {
-      display: none; } }
-  nav a img {
-    height: 60px; }
-    nav a img:hover > .menu-hover {
-      display: block; }
-  @media (min-width: 320px) {
-    nav .menu {
-      display: none; } }
-  @media (min-width: 768px) {
-    nav .menu {
-      display: none; } }
-  @media (min-width: 1024px) {
-    nav .menu {
-      list-style-type: none;
-      display: flex;
-      width: 100%;
-      justify-content: center; } }
-  nav .menu li {
-    color: white;
-    list-style: none;
     width: 20%;
-    margin: 20px; }
-    nav .menu li:hover > ul {
+    justify-content: center;
+    align-items: center; }
+    nav .menuup .logo img {
+      height: 90%;
+      width: auto; }
+
+@media (min-width: 320px) {
+  nav .menuphone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; } }
+
+@media (min-width: 768px) {
+  nav .menuphone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; } }
+
+nav .menuphone:hover > .menu-hover {
+  display: block; }
+
+nav .menuphone a img {
+  height: 40px; }
+  nav .menuphone a img:hover > .menu-hover {
+    display: block; }
+
+@media (min-width: 1024px) {
+  nav .menuphone {
+    display: none; } }
+
+nav .menuphone li {
+  list-style: none;
+  margin: 0; }
+
+nav .menuphone .menu-hover {
+  display: none;
+  background-color: #F5028a;
+  z-index: 1000;
+  width: 50%; }
+  nav .menuphone .menu-hover li {
+    margin: 20px;
+    color: white;
+    list-style: none; }
+    nav .menuphone .menu-hover li:hover > ul {
       display: block;
-      position: relative;
-      z-index: 1000; }
-    nav .menu li a {
+      position: absolute;
+      z-index: 1999;
+      background-color: black; }
+    nav .menuphone .menu-hover li a {
       letter-spacing: 4px;
       list-style: none;
       text-decoration: none;
@@ -127,20 +99,72 @@ nav {
       display: block;
       text-align: center;
       width: auto; }
-      nav .menu li a:hover {
+      nav .menuphone .menu-hover li a:active {
         color: black; }
-    nav .menu li ul {
+    nav .menuphone .menu-hover li ul {
       background-color: #F5028a;
       display: none;
       list-style: none;
       margin: 0;
-      padding: 5px; }
-      nav .menu li ul li {
-        margin: 3px;
+      padding: 2px;
+      height: auto; }
+      nav .menuphone .menu-hover li ul li {
+        margin: 2px;
         width: auto; }
-      nav .menu li ul a {
+        nav .menuphone .menu-hover li ul li:active {
+          color: #F5028a; }
+      nav .menuphone .menu-hover li ul a {
         font-family: helvetica;
         letter-spacing: 2px; }
+
+@media (min-width: 320px) {
+  nav .menu {
+    display: none; } }
+
+@media (min-width: 768px) {
+  nav .menu {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  nav .menu {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: center; } }
+
+nav .menu li {
+  color: white;
+  list-style: none;
+  width: 20%;
+  margin: 20px; }
+  nav .menu li:hover > ul {
+    display: block;
+    position: relative;
+    z-index: 1000; }
+  nav .menu li a {
+    letter-spacing: 4px;
+    list-style: none;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: hermanoalto;
+    color: white;
+    display: block;
+    text-align: center;
+    width: auto; }
+    nav .menu li a:hover {
+      color: black; }
+  nav .menu li ul {
+    background-color: #F5028a;
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 5px; }
+    nav .menu li ul li {
+      margin: 3px;
+      width: auto; }
+    nav .menu li ul a {
+      font-family: helvetica;
+      letter-spacing: 2px; }
 
 Section {
   height: auto;

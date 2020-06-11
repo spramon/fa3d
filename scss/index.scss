@@ -25,9 +25,18 @@ header{
 }
 
 nav{
+  @media #{$break-phone}{
+    width: 100%;
+    height: 130px;
+  }
+  @media #{$break-tablet}{
+    width: 100%;
+    height: 130px;
+  }
+  @media #{$break-notebook}{
     width: 100%;
     height: 150px;
-
+  }
   .menuup{
     background-color: black;
     height: 90px;
@@ -64,6 +73,17 @@ nav{
     &:hover > .menu-hover{
       display: block;
     }
+    a{
+      img{
+        height: 40px;
+        &:hover > .menu-hover{
+          display: block;
+        }
+      }
+    }
+    @media #{$break-notebook}{
+      display: none;
+    }
     li{
       list-style: none;
       margin: 0;
@@ -72,7 +92,8 @@ nav{
       display: none;
       background-color: $fucsia;
       z-index: 1000;
-      width:30%;
+      width:50%;
+
       li{
         margin: 20px;
         color: white;
@@ -103,32 +124,23 @@ nav{
           list-style: none;
           margin: 0;
           padding: 2px;
-          }
+          height: auto;
           li{
             margin: 2px;
             width: auto;
-            &:hover{
+            &:active{
               color: $fucsia;
             }
           }
           a{
             font-family: helvetica;
-            letter-spacing: 2px;}
+            letter-spacing: 2px;
+          }
         }
       }
     }
+  }
 
-    @media #{$break-notebook}{
-      display: none;
-    }
-    a{
-      img{
-        height: 60px;
-        &:hover > .menu-hover{
-          display: block;
-        }
-      }
-    }
   .menu{
     @media #{$break-phone}{display: none}
     @media #{$break-tablet}{display: none}
