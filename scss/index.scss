@@ -129,7 +129,6 @@ nav{
         }
       }
     }
-  }
   .menu{
     @media #{$break-phone}{display: none}
     @media #{$break-tablet}{display: none}
@@ -190,7 +189,6 @@ Section{
     p{
       strong{
         color: $fucsia;
-
       }
     }
   }
@@ -350,11 +348,9 @@ Section{
           height: 60%;
         }
         @media #{$break-notebook}{
-        height: 60%;
-      }
+        height: 60%;}
       }
     }
-
   }
 }
 

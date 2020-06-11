@@ -81,18 +81,20 @@ nav {
         list-style: none;
         margin: 0;
         padding: 2px; }
-        nav .menuphone .menu-hover li ul li {
-          margin: 2px;
-          width: auto; }
-        nav .menuphone .menu-hover li ul a {
-          font-family: helvetica;
-          letter-spacing: 2px; }
+      nav .menuphone .menu-hover li li {
+        margin: 2px;
+        width: auto; }
+        nav .menuphone .menu-hover li li:hover {
+          color: #F5028a; }
+      nav .menuphone .menu-hover li a {
+        font-family: helvetica;
+        letter-spacing: 2px; }
   @media (min-width: 1024px) {
-    nav .menuphone {
+    nav {
       display: none; } }
-  nav .menuphone a img {
+  nav a img {
     height: 60px; }
-    nav .menuphone a img:hover > .menu-hover {
+    nav a img:hover > .menu-hover {
       display: block; }
   @media (min-width: 320px) {
     nav .menu {
