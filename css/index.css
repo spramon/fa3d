@@ -482,26 +482,25 @@ Section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }
-  .clientes #carouselExampleControls img {
-    width: 45%; }
-
-img {
-  width: 20%;
-  margin: 5px; }
-
-.masclientes {
-  width: 20%;
-  margin: 5px; }
-  .masclientes button {
+  .clientes #modalclientes #carouselExampleControls {
+    align-items: center; }
+    .clientes #modalclientes #carouselExampleControls img {
+      width: 45%; }
+  .clientes img {
+    width: 20%;
+    margin: 5px; }
+  .clientes .masclientes {
+    width: 20%;
+    margin: 5px; }
+    .clientes .masclientes button {
+      width: 100%;
+      height: 100%;
+      background-color: black; }
+  .clientes .bannerclientes {
     width: 100%;
-    height: 100%;
+    height: 200px;
+    margin-bottom: 5px;
     background-color: black; }
-
-.bannerclientes {
-  width: 100%;
-  height: 200px;
-  margin-bottom: 5px;
-  background-color: black; }
 
 /*FOOTER*/
 footer {
