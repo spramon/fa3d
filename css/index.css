@@ -166,30 +166,52 @@ nav .menu li {
       font-family: helvetica;
       letter-spacing: 2px; }
 
-Section {
-  height: auto;
-  width: 90%;
-  margin: 0 auto; }
-  Section .texto {
-    text-align: center; }
-    Section .texto p strong {
-      color: #F5028a; }
-  Section h1 {
-    color: #00ff00;
-    font-family: hermanoalto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; }
-  Section h2 {
-    font-family: hermanoalto;
-    display: flex;
-    justify-content: center;
+@media (min-width: 320px) {
+  Section {
+    height: auto;
+    width: 96%;
+    margin: 0 auto; } }
+
+@media (min-width: 768px) {
+  Section {
+    height: auto;
+    width: 97%;
+    margin: 0 auto; } }
+
+@media (min-width: 1024px) {
+  Section {
+    height: auto;
+    width: 90%;
+    margin: 0 auto; } }
+
+Section .texto {
+  text-align: center; }
+  Section .texto p strong {
     color: #F5028a; }
-  Section h4 {
-    color: #F5028a;
-    font-family: hermanoalto;
-    display: flex;
-    justify-content: center; }
+
+Section h1 {
+  color: #00ff00;
+  font-family: hermanoalto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; }
+
+Section h2 {
+  font-family: hermanoalto;
+  display: flex;
+  justify-content: center;
+  color: #F5028a; }
+
+Section h4 {
+  color: #F5028a;
+  font-family: hermanoalto;
+  display: flex;
+  justify-content: center; }
+
+/*modo oscuro*/
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #F5028a;
+  border-color: #F5028a; }
 
 /*INDEX.HTML*/
 #carouselExampleIndicators {
@@ -481,21 +503,376 @@ Section {
 .clientes {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap; }
-  .clientes #modalclientes #carouselExampleControls {
-    align-items: center; }
-    .clientes #modalclientes #carouselExampleControls img {
-      width: 45%; }
-  .clientes img {
-    width: 15%;
-    margin: 2px; }
-  .clientes .masclientes {
-    width: 20%;
-    margin: 5px; }
-    .clientes .masclientes button {
-      width: 100%;
-      height: 100%;
-      background-color: black; }
+  .clientes .cliente1 {
+    background-image: url(../img/clientes/clientes1.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente1 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente1 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente1 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente2 {
+    background-image: url(../img/clientes/clientes2.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente2 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente2 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente2 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente3 {
+    background-image: url(../img/clientes/clientes3.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente3 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente3 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente3 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente4 {
+    background-image: url(../img/clientes/clientes4.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente4 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente4 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente4 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente5 {
+    background-image: url(../img/clientes/clientes5.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente5 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente5 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente5 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente6 {
+    background-image: url(../img/clientes/clientes6.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente6 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente6 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente6 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente7 {
+    background-image: url(../img/clientes/clientes7.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente7 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente7 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente7 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente8 {
+    background-image: url(../img/clientes/clientes8.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente8 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente8 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente8 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente9 {
+    background-image: url(../img/clientes/clientes9.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente9 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente9 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente9 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente10 {
+    background-image: url(../img/clientes/clientes10.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente10 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente10 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente10 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente11 {
+    background-image: url(../img/clientes/clientes11.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente11 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente11 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente11 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente12 {
+    background-image: url(../img/clientes/clientes12.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente12 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente12 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente12 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente13 {
+    background-image: url(../img/clientes/clientes13.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente13 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente13 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente13 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente14 {
+    background-image: url(../img/clientes/clientes14.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente14 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente14 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente14 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente15 {
+    background-image: url(../img/clientes/clientes15.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente15 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente15 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente15 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+  .clientes .cliente16 {
+    background-image: url(../img/clientes/clientes16.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente16 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 768px) {
+      .clientes .cliente16 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente16 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat; } }
   .clientes .bannerclientes {
     width: 100%;
     height: 200px;
