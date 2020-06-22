@@ -876,11 +876,20 @@ Section h4 {
         height: 267px;
         background-size: contain;
         background-repeat: no-repeat; } }
-  .clientes .bannerclientes {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 5px;
-    background-color: black; }
+  @media (min-width: 320px) {
+    .clientes .bannerclientes {
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .clientes .bannerclientes {
+      width: 100%; } }
+  @media (min-width: 1024px) {
+    .clientes .bannerclientes {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 5px;
+      background-image: url(../img/historiainstanotebook.jpg);
+      background-size: contain;
+      background-repeat: no-repeat; } }
 
 /*FOOTER*/
 footer {
