@@ -64,6 +64,9 @@ nav .menuphone:hover > .menu-hover {
 
 nav .menuphone a img {
   height: 40px; }
+  nav .menuphone a img:hover {
+    transform: scale(1.2, 1.2);
+    transition: 0,5s; }
   nav .menuphone a img:hover > .menu-hover {
     display: block; }
 
@@ -938,15 +941,21 @@ footer {
       justify-content: flex-end;
       align-items: center;
       padding-right: 10%; } }
-  @media (min-width: 320px) {
-    footer .redessociales img {
-      width: 50px;
-      margin: 10px; } }
-  @media (min-width: 768px) {
-    footer .redessociales img {
-      width: 40px;
-      margin-right: 20px; } }
-  @media (min-width: 1024px) {
-    footer .redessociales img {
-      width: 40px;
-      margin-right: 20px; } }
+  footer .redessociales img {
+    border-radius: 50%; }
+    footer .redessociales img:hover {
+      transform: scale(1.2, 1.2);
+      transition: 0,5s;
+      background-color: #00ff00; }
+    @media (min-width: 320px) {
+      footer .redessociales img {
+        width: 50px;
+        margin: 10px; } }
+    @media (min-width: 768px) {
+      footer .redessociales img {
+        width: 40px;
+        margin-right: 20px; } }
+    @media (min-width: 1024px) {
+      footer .redessociales img {
+        width: 40px;
+        margin-right: 20px; } }
