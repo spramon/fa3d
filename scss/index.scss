@@ -3,6 +3,7 @@ $fucsia: #F5028a;
 $verde: #00ff00;
 $amarillo: #Faf400;
 $blanco: white;
+$celeste: #07a5f4;
 
 $colors: (
 #F5028a,
@@ -645,35 +646,61 @@ Section{
   }
 }
 
-/*SERVICIOS.HTML*/
+/*SERVICIOS.HTML esta seccion solo se ve en notebook*/
 .servicios{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  .card{
-    background-color: black;
-    margin: 20px;
-    border: solid 10px;
-    .card-body{
-      display: flex;
-      justify-content: center;
+  width: 100%;
+  .porhora{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $amarillo;
+    border: solid 10px black;
+
+    img{
+      width: 50%;
+    }
+    .porhoradetalle{
       align-items: center;
+      justify-content: center;
+      display: flex;
       flex-direction: column;
-      text-align: center;
       p{
-        font-family: helvetica;
-        color: $amarillo;
-      }
-      a{
-        background-color: $fucsia;
         color: black;
-        border-color: $verde;
+        width: 80%;
+        text-align: center;
       }
     }
-
-
+  }
+  .personalizados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $amarillo;
+    border: solid 10px black;
+    margin-bottom: 20px;
+    img{
+      width: 50%;
+    }
+    .personalizadosdetalle{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      p{
+        text-align: center;
+        color: black;
+        width: 80%;
+      }
+    }
   }
 }
+
 
 /*CONTACTO.HTML*/
 .contacto{

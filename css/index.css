@@ -541,28 +541,50 @@ Section h4 {
     display: block;
     width: 100%; }
 
-/*SERVICIOS.HTML*/
+/*SERVICIOS.HTML esta seccion solo se ve en notebook*/
 .servicios {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center; }
-  .servicios .card {
-    background-color: black;
-    margin: 20px;
-    border: solid 10px; }
-    .servicios .card .card-body {
-      display: flex;
-      justify-content: center;
+  align-items: center;
+  width: 100%; }
+  .servicios .porhora {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #Faf400;
+    border: solid 10px black; }
+    .servicios .porhora img {
+      width: 50%; }
+    .servicios .porhora .porhoradetalle {
       align-items: center;
-      flex-direction: column;
-      text-align: center; }
-      .servicios .card .card-body p {
-        font-family: helvetica;
-        color: #Faf400; }
-      .servicios .card .card-body a {
-        background-color: #F5028a;
+      justify-content: center;
+      display: flex;
+      flex-direction: column; }
+      .servicios .porhora .porhoradetalle p {
         color: black;
-        border-color: #00ff00; }
+        width: 80%;
+        text-align: center; }
+  .servicios .personalizados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #Faf400;
+    border: solid 10px black;
+    margin-bottom: 20px; }
+    .servicios .personalizados img {
+      width: 50%; }
+    .servicios .personalizados .personalizadosdetalle {
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column; }
+      .servicios .personalizados .personalizadosdetalle p {
+        text-align: center;
+        color: black;
+        width: 80%; }
 
 /*CONTACTO.HTML*/
 .contacto {
