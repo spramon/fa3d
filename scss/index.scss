@@ -60,16 +60,18 @@ nav{
     margin-top: 8px;
     border-radius: 10px;
     margin-right: 10px;
-    textarea{
-      height: 50%;
+
+    input{
+      height: 40px;
       width: 70%;
       border-radius: none;
       border: none;
+      border-radius: 10px;
 
     }
     button{
       margin-left: 5px;
-      height: 50%;
+      height: 40px;
       width: 20%;
       background-color: black;
       color: white;
@@ -77,6 +79,11 @@ nav{
       letter-spacing: 3px;
       border: none;
       box-shadow: 1px 1px 1px 1px white;
+      border-radius: 10px;
+      &:hover{
+        background-color: $verde;
+        color: black;
+      }
     }
 
   }
@@ -205,6 +212,7 @@ nav{
       display: flex;
       flex-direction: row;
       justify-content: center;
+
       li{
         color: white;
         list-style: none;
@@ -235,6 +243,8 @@ nav{
           list-style: none;
           margin: 0;
           padding: 5px;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
           li{
             margin: 3px;
             width: auto;
@@ -260,7 +270,11 @@ nav{
             align-items: center;
             width: 20%;
             margin-right: 15px;
-            
+            &:hover{
+              transform: scale(1.2,1.2);
+              transition: 0.5s;
+            }
+
 
       }
     }
@@ -280,7 +294,9 @@ Section{
   }
   @media #{$break-notebook}{
     height: auto;
-    width: 90%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: 0 auto;
   }
   .texto{
@@ -492,6 +508,7 @@ Section{
       padding: 10px;
       margin: 10px 0 10px 0;
       position: relative;
+      border-radius: 10px;
     }
     @media #{$break-tablet}{
       background-color: black;
@@ -502,6 +519,7 @@ Section{
       padding: 10px;
       margin: 10px 2.5% 10px 2.5%;
       position: relative;
+      border-radius: 10px;
     }
     @media #{$break-notebook}{
       background-color: black;
@@ -511,7 +529,8 @@ Section{
       width: 27%;
       padding: 10px;
       margin: 10px 2.5% 10px 2.5%;
-      position: relative;}
+      position: relative;
+      border-radius: 10px;}
 
     .imgprecio{
       width: 15%;
@@ -530,6 +549,7 @@ Section{
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      border-radius: 10px;
       .nombre{
         color:white;
         font-size: 25px;
@@ -549,6 +569,7 @@ Section{
       button{
         background-color: $fucsia;
         border-color: white;
+        border-radius: 10px;
         &:hover{
           background-color: black;
           border-color: white;
@@ -590,6 +611,8 @@ Section{
   img{
     display: block;
     width: 100%;
+    border-radius: 10px;
+
   }
 }
 
@@ -608,6 +631,7 @@ Section{
       padding: 5px;
       margin: 10px 1.5% 10px 1.5%;
       position: relative;
+      border-radius: 10px;
     }
     @media #{$break-tablet}{
       background-color: black;
@@ -618,6 +642,7 @@ Section{
       padding: 10px;
       margin: 10px 2.5% 10px 2.5%;
       position: relative;
+      border-radius: 10px;
     }
     @media #{$break-notebook}{
       background-color: black;
@@ -627,7 +652,8 @@ Section{
       width: 27%;
       padding: 10px;
       margin: 10px 2.5% 10px 2.5%;
-      position: relative;}
+      position: relative;
+      border-radius: 10px;}
 
     .imgprecio{
       width: 15%;
@@ -646,6 +672,7 @@ Section{
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      border-radius: 10px;
       .nombre{
         color:white;
         font-size: 25px;
@@ -665,6 +692,7 @@ Section{
       button{
         background-color: $fucsia;
         border-color: white;
+        border-radius: 10px;
         &:hover{
           background-color: black;
           border-color: white;
@@ -706,6 +734,7 @@ Section{
   img{
     display: block;
     width: 100%;
+    border-radius: 10px;
   }
 }
 
@@ -804,13 +833,46 @@ Section{
     grid-column-start: 3;
     grid-column-end: 4;
     height: 100%;
-    align-items: center;}
-    .mdl-textfield__label:after{
-      background-color: $fucsia;
+    align-items: center;
+
+
+    input{
+      font-family: HermanoAlto;
+      letter-spacing: 2px;
+      border: none;
+      border-bottom: 2px solid;
+      border-bottom-color: $fucsia;
+      margin: 15px;
+      color: grey;
     }
-    .mdl-textfield__input{
-      border-bottom: 1px solid black;
-      margin-top: 5px;
+    textarea{
+      font-family: HermanoAlto;
+      letter-spacing: 2px;
+      border: none;
+      border-bottom: 2px solid;
+      border-bottom-color: $fucsia;
+      height: 50px;
+      margin: 15px;
+
+
+    }
+
+    button{
+      height: 40px;
+      margin-left: 5px;
+      width: 30%;
+      background-color: black;
+      color: white;
+      font-family: HermanoAlto;
+      letter-spacing: 3px;
+      border: none;
+      margin: 20px;
+      border-radius: 10px;
+      &:hover{
+        background-color: $verde;
+        color: black;
+      }
+    }
     }
   }
     a{
@@ -884,6 +946,7 @@ Section{
         margin: 1px;
         background-size: contain;
         background-repeat: no-repeat;
+        border-radius: 10px;
       }
       @media #{$break-tablet}{
         width: 200px;
@@ -891,6 +954,7 @@ Section{
         height: 356px;
         background-size: contain;
         background-repeat: no-repeat;
+        border-radius: 10px;
 
       }
       @media #{$break-notebook}{
@@ -899,6 +963,7 @@ Section{
       height: 267px;
       background-size: contain;
       background-repeat: no-repeat;
+      border-radius: 10px;
     }
 
     }
@@ -913,6 +978,7 @@ Section{
       background-repeat: no-repeat;
       background-color: black;
       margin-bottom: 5px;
+      border-radius: 10px;
     }
     @media #{$break-tablet}{
       width: 100%;
@@ -923,6 +989,7 @@ Section{
       background-repeat: no-repeat;
       background-color: black;
       margin-bottom: 5px;
+      border-radius: 10px;
     }
     @media #{$break-notebook}{
     width: 100%;
@@ -932,107 +999,12 @@ Section{
     background-image: url(../img/historianotebook.jpg);
     background-size: contain;
     background-position: center;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+  border-radius: 10px;}
   }
 }
 /*FOOTER*/
 footer{
-  /*.footer1{
-    background-color: $fucsia;
-    width: 100%;
-    height: 180px;
-    display: flex;
-    flex-wrap: nowrap;
-    .piedepagina {
-      @media #{$break-phone}{
-      display: none;
-      }
-      @media #{$break-tablet}{
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin: 10px 10px 10px 30px;
-      }
-      @media #{$break-notebook}{
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin: 10px 10px 10px 30px;
-      }
-      li{
-        list-style: none;
-        margin: 0px;
-        color: white;
-        font-size: 12px;
-        font-family: helvetica;
-        ul{
-          margin: 0;
-          li{
-            margin: 0px;
-            line-height: normal;
-          }
-        }
-        a{
-          color: white;
-          font-size: 12px;
-          text-decoration: none;
-          text-align: center;
-          &:hover{
-            color: black;
-          }
-        }
-      }
-    }
-    .redessociales{
-      @media #{$break-phone}{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      @media #{$break-tablet}{
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 10%;
-      }
-      @media #{$break-notebook}{
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 10%;
-      }
-      img{
-        border-radius: 50%;
-        &:hover{transform: scale(1.2,1.2);
-        transition: 0,5s;
-        background-color: $verde;
-      }
-        @media #{$break-phone}{
-          width: 50px;
-          margin: 10px;
-
-        }
-        @media #{$break-tablet}{
-          width: 40px;
-          margin-right: 20px;
-
-
-        }
-        @media #{$break-notebook}{
-          width: 40px;
-          margin-right: 20px;
-
-        }
-      }
-    }
-  }*/
   .footer1{
     display: flex;
     flex-direction: column;
@@ -1142,4 +1114,17 @@ footer{
 
 
   }
+}
+
+.ediciondeproductos{
+  position: fixed;
+  width: 60px;
+  height: 250px;
+  background-color: black;
+  z-index: 1999;
+  margin-top: 15%;
+  opacity: 70%;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+
 }

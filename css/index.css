@@ -41,21 +41,26 @@ nav .buscadorbarra {
   margin-top: 8px;
   border-radius: 10px;
   margin-right: 10px; }
-  nav .buscadorbarra textarea {
-    height: 50%;
+  nav .buscadorbarra input {
+    height: 40px;
     width: 70%;
     border-radius: none;
-    border: none; }
+    border: none;
+    border-radius: 10px; }
   nav .buscadorbarra button {
     margin-left: 5px;
-    height: 50%;
+    height: 40px;
     width: 20%;
     background-color: black;
     color: white;
     font-family: HermanoAlto;
     letter-spacing: 3px;
     border: none;
-    box-shadow: 1px 1px 1px 1px white; }
+    box-shadow: 1px 1px 1px 1px white;
+    border-radius: 10px; }
+    nav .buscadorbarra button:hover {
+      background-color: #00ff00;
+      color: black; }
 
 nav .menuup {
   background-color: black;
@@ -200,7 +205,9 @@ nav .menu .submenu {
       display: none;
       list-style: none;
       margin: 0;
-      padding: 5px; }
+      padding: 5px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px; }
       nav .menu .submenu li ul li {
         margin: 3px;
         width: auto; }
@@ -222,6 +229,9 @@ nav .menu .menuextras {
     align-items: center;
     width: 20%;
     margin-right: 15px; }
+    nav .menu .menuextras img:hover {
+      transform: scale(1.2, 1.2);
+      transition: 0.5s; }
 
 @media (min-width: 320px) {
   Section {
@@ -238,7 +248,9 @@ nav .menu .menuextras {
 @media (min-width: 1024px) {
   Section {
     height: auto;
-    width: 90%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
     margin: 0 auto; } }
 
 Section .texto {
@@ -420,7 +432,8 @@ Section h4 {
       width: 90%;
       padding: 10px;
       margin: 10px 0 10px 0;
-      position: relative; } }
+      position: relative;
+      border-radius: 10px; } }
   @media (min-width: 768px) {
     .articles article {
       background-color: black;
@@ -430,7 +443,8 @@ Section h4 {
       width: 45%;
       padding: 10px;
       margin: 10px 2.5% 10px 2.5%;
-      position: relative; } }
+      position: relative;
+      border-radius: 10px; } }
   @media (min-width: 1024px) {
     .articles article {
       background-color: black;
@@ -440,7 +454,8 @@ Section h4 {
       width: 27%;
       padding: 10px;
       margin: 10px 2.5% 10px 2.5%;
-      position: relative; } }
+      position: relative;
+      border-radius: 10px; } }
   .articles article .imgprecio {
     width: 15%;
     height: auto;
@@ -456,7 +471,8 @@ Section h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    border-radius: 10px; }
     .articles article .article-hover .nombre {
       color: white;
       font-size: 25px;
@@ -472,7 +488,8 @@ Section h4 {
       padding: 2px; }
     .articles article .article-hover button {
       background-color: #F5028a;
-      border-color: white; }
+      border-color: white;
+      border-radius: 10px; }
       .articles article .article-hover button:hover {
         background-color: black;
         border-color: white;
@@ -499,7 +516,8 @@ Section h4 {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e"); }
   .articles img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    border-radius: 10px; }
 
 .productosdestacados {
   display: flex;
@@ -514,7 +532,8 @@ Section h4 {
       width: 40%;
       padding: 5px;
       margin: 10px 1.5% 10px 1.5%;
-      position: relative; } }
+      position: relative;
+      border-radius: 10px; } }
   @media (min-width: 768px) {
     .productosdestacados article {
       background-color: black;
@@ -524,7 +543,8 @@ Section h4 {
       width: 45%;
       padding: 10px;
       margin: 10px 2.5% 10px 2.5%;
-      position: relative; } }
+      position: relative;
+      border-radius: 10px; } }
   @media (min-width: 1024px) {
     .productosdestacados article {
       background-color: black;
@@ -534,7 +554,8 @@ Section h4 {
       width: 27%;
       padding: 10px;
       margin: 10px 2.5% 10px 2.5%;
-      position: relative; } }
+      position: relative;
+      border-radius: 10px; } }
   .productosdestacados article .imgprecio {
     width: 15%;
     height: auto;
@@ -550,7 +571,8 @@ Section h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; }
+    flex-direction: column;
+    border-radius: 10px; }
     .productosdestacados article .article-hover .nombre {
       color: white;
       font-size: 25px;
@@ -566,7 +588,8 @@ Section h4 {
       padding: 2px; }
     .productosdestacados article .article-hover button {
       background-color: #F5028a;
-      border-color: white; }
+      border-color: white;
+      border-radius: 10px; }
       .productosdestacados article .article-hover button:hover {
         background-color: black;
         border-color: white;
@@ -593,7 +616,8 @@ Section h4 {
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='black' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/%3e%3c/svg%3e"); }
   .productosdestacados img {
     display: block;
-    width: 100%; }
+    width: 100%;
+    border-radius: 10px; }
 
 /*SERVICIOS.HTML esta seccion solo se ve en notebook*/
 .servicios {
@@ -677,12 +701,37 @@ Section h4 {
       grid-column-start: 3;
       grid-column-end: 4;
       height: 100%;
-      align-items: center; } }
-  .contacto form .mdl-textfield__label:after {
-    background-color: #F5028a; }
-  .contacto form .mdl-textfield__input {
-    border-bottom: 1px solid black;
-    margin-top: 5px; }
+      align-items: center; }
+      .contacto form input {
+        font-family: HermanoAlto;
+        letter-spacing: 2px;
+        border: none;
+        border-bottom: 2px solid;
+        border-bottom-color: #F5028a;
+        margin: 15px;
+        color: grey; }
+      .contacto form textarea {
+        font-family: HermanoAlto;
+        letter-spacing: 2px;
+        border: none;
+        border-bottom: 2px solid;
+        border-bottom-color: #F5028a;
+        height: 50px;
+        margin: 15px; }
+      .contacto form button {
+        height: 40px;
+        margin-left: 5px;
+        width: 30%;
+        background-color: black;
+        color: white;
+        font-family: HermanoAlto;
+        letter-spacing: 3px;
+        border: none;
+        margin: 20px;
+        border-radius: 10px; }
+        .contacto form button:hover {
+          background-color: #00ff00;
+          color: black; } }
   .contacto a {
     background-color: #F5028a;
     width: 50%; }
@@ -744,21 +793,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente1 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente1 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente2 {
     background-image: url(../img/clientes/clientes2.jpg); }
     @media (min-width: 320px) {
@@ -767,21 +819,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente2 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente2 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente3 {
     background-image: url(../img/clientes/clientes3.jpg); }
     @media (min-width: 320px) {
@@ -790,21 +845,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente3 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente3 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente4 {
     background-image: url(../img/clientes/clientes4.jpg); }
     @media (min-width: 320px) {
@@ -813,21 +871,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente4 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente4 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente5 {
     background-image: url(../img/clientes/clientes5.jpg); }
     @media (min-width: 320px) {
@@ -836,21 +897,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente5 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente5 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente6 {
     background-image: url(../img/clientes/clientes6.jpg); }
     @media (min-width: 320px) {
@@ -859,21 +923,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente6 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente6 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente7 {
     background-image: url(../img/clientes/clientes7.jpg); }
     @media (min-width: 320px) {
@@ -882,21 +949,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente7 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente7 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente8 {
     background-image: url(../img/clientes/clientes8.jpg); }
     @media (min-width: 320px) {
@@ -905,21 +975,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente8 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente8 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente9 {
     background-image: url(../img/clientes/clientes9.jpg); }
     @media (min-width: 320px) {
@@ -928,21 +1001,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente9 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente9 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente10 {
     background-image: url(../img/clientes/clientes10.jpg); }
     @media (min-width: 320px) {
@@ -951,21 +1027,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente10 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente10 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente11 {
     background-image: url(../img/clientes/clientes11.jpg); }
     @media (min-width: 320px) {
@@ -974,21 +1053,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente11 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente11 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente12 {
     background-image: url(../img/clientes/clientes12.jpg); }
     @media (min-width: 320px) {
@@ -997,21 +1079,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente12 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente12 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente13 {
     background-image: url(../img/clientes/clientes13.jpg); }
     @media (min-width: 320px) {
@@ -1020,21 +1105,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente13 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente13 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente14 {
     background-image: url(../img/clientes/clientes14.jpg); }
     @media (min-width: 320px) {
@@ -1043,21 +1131,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente14 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente14 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente15 {
     background-image: url(../img/clientes/clientes15.jpg); }
     @media (min-width: 320px) {
@@ -1066,21 +1157,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente15 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente15 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .cliente16 {
     background-image: url(../img/clientes/clientes16.jpg); }
     @media (min-width: 320px) {
@@ -1089,21 +1183,24 @@ Section h4 {
         height: 204px;
         margin: 1px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 768px) {
       .clientes .cliente16 {
         width: 200px;
         margin: 2px;
         height: 356px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
     @media (min-width: 1024px) {
       .clientes .cliente16 {
         width: 150px;
         margin: 2px;
         height: 267px;
         background-size: contain;
-        background-repeat: no-repeat; } }
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   @media (min-width: 320px) {
     .clientes .bannerclientes {
       width: 100%;
@@ -1113,7 +1210,8 @@ Section h4 {
       background-position: center;
       background-repeat: no-repeat;
       background-color: black;
-      margin-bottom: 5px; } }
+      margin-bottom: 5px;
+      border-radius: 10px; } }
   @media (min-width: 768px) {
     .clientes .bannerclientes {
       width: 100%;
@@ -1123,7 +1221,8 @@ Section h4 {
       background-position: center;
       background-repeat: no-repeat;
       background-color: black;
-      margin-bottom: 5px; } }
+      margin-bottom: 5px;
+      border-radius: 10px; } }
   @media (min-width: 1024px) {
     .clientes .bannerclientes {
       width: 100%;
@@ -1133,194 +1232,110 @@ Section h4 {
       background-image: url(../img/historianotebook.jpg);
       background-size: contain;
       background-position: center;
-      background-repeat: no-repeat; } }
+      background-repeat: no-repeat;
+      border-radius: 10px; } }
 
 /*FOOTER*/
-footer {
-  /*.footer1{
-    background-color: $fucsia;
-    width: 100%;
-    height: 180px;
-    display: flex;
-    flex-wrap: nowrap;
-    .piedepagina {
-      @media (min-width: 320px){
-      display: none;
-      }
-      @media (min-width: 768px){
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        margin: 10px 10px 10px 30px;
-      }
-      @media (min-width: 1024px){
-      display: flex;
-      flex-direction: column;
-      width: 80%;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      margin: 10px 10px 10px 30px;
-      }
-      li{
-        list-style: none;
-        margin: 0px;
-        color: white;
-        font-size: 12px;
-        font-family: helvetica;
-        ul{
-          margin: 0;
-          li{
-            margin: 0px;
-            line-height: normal;
-          }
-        }
-        a{
-          color: white;
-          font-size: 12px;
-          text-decoration: none;
-          text-align: center;
-          &:hover{
-            color: black;
-          }
-        }
-      }
-    }
-    .redessociales{
-      @media (min-width: 320px){
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      @media (min-width: 768px){
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 10%;
-      }
-      @media (min-width: 1024px){
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 10%;
-      }
-      img{
-        border-radius: 50%;
-        &:hover{transform: scale(1.2,1.2);
-        transition: 0,5s;
-        background-color: $verde;
-      }
-        @media (min-width: 320px){
-          width: 50px;
-          margin: 10px;
-
-        }
-        @media (min-width: 768px){
-          width: 40px;
-          margin-right: 20px;
-
-
-        }
-        @media (min-width: 1024px){
-          width: 40px;
-          margin-right: 20px;
-
-        }
-      }
-    }
-  }*/ }
-  footer .footer1 {
+footer .footer1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #F5028a;
+  padding: 20px;
+  margin: 0; }
+  footer .footer1 .piedepagina {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #F5028a;
-    padding: 20px;
-    margin: 0; }
-    footer .footer1 .piedepagina {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 10px; }
-      footer .footer1 .piedepagina li {
-        list-style: none;
-        margin: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; }
+    footer .footer1 .piedepagina li {
+      list-style: none;
+      margin: 0px;
+      color: black;
+      font-size: 16px;
+      font-family: helvetica;
+      font-style: bold; }
+      footer .footer1 .piedepagina li ul {
+        margin: 0; }
+        footer .footer1 .piedepagina li ul li {
+          margin: 0px;
+          line-height: normal; }
+      footer .footer1 .piedepagina li a {
         color: black;
         font-size: 16px;
         font-family: helvetica;
-        font-style: bold; }
-        footer .footer1 .piedepagina li ul {
-          margin: 0; }
-          footer .footer1 .piedepagina li ul li {
-            margin: 0px;
-            line-height: normal; }
-        footer .footer1 .piedepagina li a {
-          color: black;
-          font-size: 16px;
-          font-family: helvetica;
-          text-decoration: none;
-          text-align: center; }
-          footer .footer1 .piedepagina li a:hover {
-            color: white; }
-    footer .footer1 p {
-      color: black;
-      font-family: hermanoalto;
-      letter-spacing: 2px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0; }
-    @media (min-width: 320px) {
-      footer .footer1 .redessociales {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center; } }
-    @media (min-width: 768px) {
-      footer .footer1 .redessociales {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center; } }
-    @media (min-width: 1024px) {
-      footer .footer1 .redessociales {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center; } }
-    footer .footer1 .redessociales img {
-      border-radius: 50%; }
-      footer .footer1 .redessociales img:hover {
-        transform: scale(1.2, 1.2);
-        transition: 0,5s;
-        background-color: #00ff00; }
-      @media (min-width: 320px) {
-        footer .footer1 .redessociales img {
-          width: 50px;
-          margin: 5px; } }
-      @media (min-width: 768px) {
-        footer .footer1 .redessociales img {
-          width: 40px;
-          margin-right: 5px; } }
-      @media (min-width: 1024px) {
-        footer .footer1 .redessociales img {
-          width: 40px;
-          margin-right: 5px; } }
-  footer .footer2 {
-    background-color: #F5028a;
-    color: white;
-    font-family: helvetica;
-    font-style: italic;
-    font-size: 12px;
+        text-decoration: none;
+        text-align: center; }
+        footer .footer1 .piedepagina li a:hover {
+          color: white; }
+  footer .footer1 p {
+    color: black;
+    font-family: hermanoalto;
+    letter-spacing: 2px;
     display: flex;
-    padding: 5px;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     margin: 0; }
-    footer .footer2 p {
-      margin: 2px 0 2px 0; }
+  @media (min-width: 320px) {
+    footer .footer1 .redessociales {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media (min-width: 768px) {
+    footer .footer1 .redessociales {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media (min-width: 1024px) {
+    footer .footer1 .redessociales {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  footer .footer1 .redessociales img {
+    border-radius: 50%; }
+    footer .footer1 .redessociales img:hover {
+      transform: scale(1.2, 1.2);
+      transition: 0,5s;
+      background-color: #00ff00; }
+    @media (min-width: 320px) {
+      footer .footer1 .redessociales img {
+        width: 50px;
+        margin: 5px; } }
+    @media (min-width: 768px) {
+      footer .footer1 .redessociales img {
+        width: 40px;
+        margin-right: 5px; } }
+    @media (min-width: 1024px) {
+      footer .footer1 .redessociales img {
+        width: 40px;
+        margin-right: 5px; } }
+
+footer .footer2 {
+  background-color: #F5028a;
+  color: white;
+  font-family: helvetica;
+  font-style: italic;
+  font-size: 12px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0; }
+  footer .footer2 p {
+    margin: 2px 0 2px 0; }
+
+.ediciondeproductos {
+  position: fixed;
+  width: 60px;
+  height: 250px;
+  background-color: black;
+  z-index: 1999;
+  margin-top: 15%;
+  opacity: 70%;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px; }
