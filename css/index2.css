@@ -1,0 +1,46 @@
+.seccionescarrousel{
+  display: flex;
+  flex-direction: row;
+
+
+}
+.seccionescarrousel .seccion1{
+  display: flex;
+  flex-direction: row;
+
+
+}
+.seccionescarrousel a{
+  border-radius: 50%;
+  width: 200px;
+  height:200px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 4px grey;
+}
+.seccionescarrousel a img{
+  height: 60%;
+}
+.seccionescarrousel .seccion-hover{
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  -webkit-text-stroke: 1px black;
+  font-size: 40px;
+}
+.seccionescarrousel button{
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+}
+.seccionescarrousel button img{
+  width: 20px;
+  height:20px;
+
+
+}
