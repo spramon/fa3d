@@ -19,56 +19,45 @@
   <link rel="stylesheet" href="css/index.css">
 
   <title>Fa. Impresión 3D</title>
+  <script>
+
+  window.onload = function(){
+      var load = document.querySelector(".cargando");
+    setTimeout(function(){    load.style.visibility = "hidden";
+        load.style.opacity = "0";},3200)
+
+  };
+  </script>
 </head>
 
 <body>
+  <div class="cargando">
+    <img src="img/gifdecarga.gif" alt="gif-carga">
+
+  </div>
   <header>
     <nav>
       <div class="menuup">
         <div class="logo">
           <img src="img/faLogo1-04.png" alt="logo">
         </div>
-        <!-- <div class="buscador">
-          <input type="text" name="" value="" placeholder=" ¿Qué estas buscando?">
-          <img src="img/lupanegra.png" alt="lupa">
-        </div> -->
       </div>
-      <div class="menuphone">
-        <li><a href=""><img src="img/menublanco.svg" alt=""></a></li>
-        <div class="menu-hover">
-          <li>
-            <a href="index.html">INICIO</a>
-          </li>
-          <li>
-            <a href="#" id="productos">PRODUCTOS</a>
-            <ul>
-              <li><a href="html/productos/accesorios.html">Accesorios</a></li>
-              <li><a href="html/productos/hogar.html">Hogar</a></li>
-              <li><a href="html/productos/juegos.html">Juegos</a></li>
-              <li><a href="html/productos/llaveros.html">Llaveros</a></li>
-              <li><a href="html/productos/mascarasfaciales.html">Mascaras COVID</a></li>
-              <li><a href="html/productos/mates.html">Mates</a></li>
-              <li><a href="html/productos/pasteleria.html">Pasteleria</a></li>
-              <li><a href="html/productos/personajes.html">Personajes</a></li>
-              <li><a href="html/personalizados.html">Personalizados</a></li>
-              <li><a href="html/productos/señaladores.html">Señaladores</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">SERVICIOS</a>
-            <ul>
-              <li><a href="html/porhora.html">ImpresiónXhora</a></li>
-              <li><a href="html/personalizados.html">Personalizados</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="html/comprar.html">¿CÓMO COMPRAR?</a>
-          </li>
-          <li>
-            <a href="html/contacto.html">CONTACTO</a>
-          </li>
+
+        <div class="phoneytablet-menu">
+          <img class="menuphoneboton" src="img/menublanco.svg" alt="menu">
+
+          <div class="buscadorbarra-menuphone">
+              <input type="text" name="buscador" value="" placeholder=" ¿Qué estás buscando?">
+              <button type="" name="button">
+
+              </button>
+          </div>
+
+          <div class="logo">
+            <img src="img/faLogo1-04.png" alt="logo">
+          </div>
+
         </div>
-      </div>
 
       <div class="menu">
         <div class="submenu">
@@ -108,7 +97,7 @@
         </div>
         <div class="menuextras">
           <img class="buscador" src="img/lupablanca.png" alt="buscador">
-          <img class="login" src="img/usuarioblanco.png" alt="login">
+          <!--<img class="login" src="img/usuarioblanco.png" alt="login">-->
 
         </div>
 
@@ -120,6 +109,43 @@
       </div>
 
     </nav>
+
+    <div class="phoneytablet-submenu">
+      <li>
+        <a href="index.html">INICIO</a>
+      </li>
+      <li>
+        <a href="#" id="productos">PRODUCTOS</a>
+        <ul>
+          <li><a href="html/productos/accesorios.html">Accesorios</a></li>
+          <li><a href="html/productos/hogar.html">Hogar</a></li>
+          <li><a href="html/productos/juegos.html">Juegos</a></li>
+          <li><a href="html/productos/llaveros.html">Llaveros</a></li>
+          <li><a href="html/productos/mascarasfaciales.html">Mascaras COVID</a></li>
+          <li><a href="html/productos/mates.html">Mates</a></li>
+          <li><a href="html/productos/pasteleria.html">Pasteleria</a></li>
+          <li><a href="html/productos/personajes.html">Personajes</a></li>
+          <li><a href="html/personalizados.html">Personalizados</a></li>
+          <li><a href="html/productos/señaladores.html">Señaladores</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">SERVICIOS</a>
+        <ul>
+          <li><a href="html/porhora.html">ImpresiónXhora</a></li>
+          <li><a href="html/personalizados.html">Personalizados</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="html/comprar.html">¿CÓMO COMPRAR?</a>
+      </li>
+      <li>
+        <a href="html/contacto.html">CONTACTO</a>
+      </li>
+
+
+    </div>
+
   </header>
   <div class="ediciondeproductos">
     <div class="agregar">
@@ -127,6 +153,7 @@
     </div>
         </div>
   <section>
+
 
     <!-- modo oscuro
     <div class="custom-control custom-switch">
