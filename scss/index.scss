@@ -710,13 +710,18 @@ Section{
         padding: 2px;
       }
       button{
+        height: 40px;
         background-color: $fucsia;
         border-color: white;
         border-radius: 10px;
+        outline: none;
+
         &:hover{
           background-color: black;
           border-color: white;
           color: white;
+          outline: none;
+
         }
       }
       &:hover{

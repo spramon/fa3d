@@ -586,13 +586,16 @@ Section h4 {
       justify-content: center;
       padding: 2px; }
     .productosdestacados article .article-hover button {
+      height: 40px;
       background-color: #F5028a;
       border-color: white;
-      border-radius: 10px; }
+      border-radius: 10px;
+      outline: none; }
       .productosdestacados article .article-hover button:hover {
         background-color: black;
         border-color: white;
-        color: white; }
+        color: white;
+        outline: none; }
     .productosdestacados article .article-hover:hover {
       opacity: 100%;
       background-color: rgba(0, 0, 0, 0.7);
