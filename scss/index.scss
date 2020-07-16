@@ -29,288 +29,269 @@ hr{
   border: solid 0,9px black;
 }
 
-header{
-
-  background-color: $fucsia;
-}
-
 nav{
-  @media #{$break-phone}{
-    width: 100%;
-    height: 70px;
-  }
-  @media #{$break-tablet}{
-    width: 100%;
-    height: 80px;
-  }
-  @media #{$break-notebook}{
-    width: 100%;
-    height: 150px;
-  }
-  .phoneytablet-menu{
+  width: 100%;
+  height: auto;
+  .menu-mobile{
     @media #{$break-phone}{
-
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    height: 70px;
     background-color: black;
-
-    }
-
-    @media #{$break-notebook}{
-    display: none;
-    }
-      .menuphoneboton{
-        display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 18%;
-          padding: 15px;
-      }
-    .buscadorbarra-menuphone{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 60%;
-      height: 50%;
-      input{
-        border-radius: 10px;
-        height: 100%;
-        width: 100%;
-        border: 1px solid white;
-      }
-      button{
-        padding: 10px;
-        margin-left: 2%;
-        width: 15%;
-        height: 100%;
-        border-radius: 10px;
-        background-color: black;
-        background-image: url(../img/lupablanca.png);
-        background-size: 80%;
-        background-position: center;
-        background-repeat: no-repeat;
-        border: 1px solid black;
-      }
-    }
-    .logo{
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      width: 20%;
-      background-color: black;
-      img{
-        width: 85%;
-      }
-
-    }
-  }
-
-
-  .buscadorbarra{
-    display: none;
-    position: absolute;
-    right: 0;
-    width: 30%;
-    height: 80px;
-    background-color: $fucsia;
-    z-index: 1999;
-    justify-content: center;
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 8px;
-    border-radius: 10px;
-    margin-right: 10px;
-
-    input{
-      height: 40px;
-      width: 70%;
-      border-radius: none;
-      border: none;
-      border-radius: 10px;
-
+    flex-direction: row;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    .icono-menu{
+      height: 40%;
+      width: auto;
+      margin-left: 40px;
     }
-    button{
-      margin-left: 5px;
-      height: 40px;
-      width: 20%;
-      background-color: black;
-      color: white;
-      font-family: HermanoAlto;
-      letter-spacing: 3px;
-      border: none;
-      box-shadow: 1px 1px 1px 1px white;
-      border-radius: 10px;
-      &:hover{
-        background-color: $verde;
-        color: black;
-      }
+    .icono-logo{
+      height: 85%;
+      width: auto;
     }
-
-  }
-  .menuup{
-    @media #{$break-phone}{
+    .icono-lupa{
+      height: 40%;
+      width: auto;
+      margin-right: 40px;
+    }
+    }
+    @media #{$break-notebook}{
       display: none;
     }
-    @media #{$break-notebook}{
-    background-color: black;
-    height: 90px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    .logo{
-      background-color: black;
-      display: flex;
-      width: 20%;
-      justify-content: center;
-      align-items: center;
-      img{
-        height: 90%;
-        width: auto;}
-      }
-    }
   }
+  .submenu-mobile{
+      background-color: black;
+      position: absolute;
+      z-index: 9999;
+      width: 50%;;
 
-  .menu{
-    @media #{$break-phone}{display: none}
-    @media #{$break-tablet}{display: none}
-    @media #{$break-notebook}{
-    list-style-type: none;
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    background-color: $fucsia;
-    height: 60px}
-    .submenu{
-      width: 90%;
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
 
-      li{
-        color: white;
-        list-style: none;
-        width: 20%;
-        margin: 20px;
-        &:hover > ul{
-          display: block;
-          position: relative;
-          z-index: 1000;
-        }
-        a{
-          letter-spacing: 4px;
-          list-style: none;
-          text-decoration: none;
-          font-size: 17px;
-          font-family: hermanoalto;
+        li{
+          margin-top: 20px;
+          margin-bottom: 20px;
           color: white;
-          display: block;
-          text-align: center;
-          width: auto;
-          &:hover{
-            color:black;
-          }
-        }
-        ul{
-          background-color: $fucsia;
-          display: none;
           list-style: none;
-          margin: 0;
-          padding: 5px;
-          border-bottom-right-radius: 10px;
-          border-bottom-left-radius: 10px;
-          li{
-            margin: 3px;
-            width: auto;
-          }
+
+
           a{
-            font-family: helvetica;
-            letter-spacing: 2px;
+            letter-spacing: 4px;
+            list-style: none;
+            text-decoration: none;
+            font-size: 17px;
+            font-family: hermanoalto;
+            color: white;
+            display: block;
+            text-align: center;
+            width: auto;
+            &:active{
+              color: $amarillo;
+            }
+
+          }
+          ul{
+            list-style: none;
+            margin: 0;
+            padding: 2px;
+            height: auto;
+            li{
+              margin-top: 4px;
+              margin-bottom: 4px;
+              width: auto;
+            }
+            a{
+              color: $fucsia;
+              font-family: helvetica;
+              letter-spacing: 2px;
+              &:active{
+                color: white;
+              }
+            }
           }
         }
       }
-    }
-    .menuextras{
-      width: 5%;
+  .buscadorbarra-mobile{
+    @media #{$break-phone}{
+      width: 100%;
+      height: 40px;
       display: flex;
+      background-color: $fucsia;
       justify-content: center;
       flex-direction: row;
       align-items: center;
+      margin-top: 2px;
+      border-radius: 10px;
       margin-right: 10px;
-      img{
-           display: flex;
+
+      input{
+        height: 30px;
+        width: 95%;
+        border-radius: none;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+      }
+
+    }
+    @media #{$break-notebook}{
+      display: none;
+    }
+
+  }
+    .menuup{
+          @media #{$break-phone}{
+            display: none;
+          }
+          @media #{$break-notebook}{
+          background-color: black;
+          height: 90px;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+          .logo{
+            background-color: black;
+            display: flex;
+            width: 20%;
+            justify-content: center;
+            align-items: center;
+            img{
+              height: 90%;
+              width: auto;}
+            }
+          }
+        }
+
+        .menu{
+          @media #{$break-phone}{display: none}
+          @media #{$break-tablet}{display: none}
+          @media #{$break-notebook}{
+          list-style-type: none;
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: center;
+          background-color: $fucsia;
+          height: 60px}
+          .submenu{
+            width: 90%;
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            li{
+              color: white;
+              list-style: none;
+              width: 20%;
+              margin: 20px;
+              &:hover > ul{
+                display: block;
+                position: relative;
+                z-index: 1000;
+              }
+              a{
+                letter-spacing: 4px;
+                list-style: none;
+                text-decoration: none;
+                font-size: 17px;
+                font-family: hermanoalto;
+                color: white;
+                display: block;
+                text-align: center;
+                width: auto;
+                &:hover{
+                  color:black;
+                }
+              }
+              ul{
+                background-color: $fucsia;
+                display: none;
+                list-style: none;
+                margin: 0;
+                padding: 5px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                li{
+                  margin: 3px;
+                  width: auto;
+                }
+                a{
+                  font-family: helvetica;
+                  letter-spacing: 2px;
+                }
+              }
+            }
+          }
+          .menuextras{
+            width: 5%;
+            display: flex;
             justify-content: center;
             flex-direction: row;
             align-items: center;
-            width: 40%;
-            margin-right: 15px;
-            &:hover{
-              transform: scale(1.2,1.2);
-              transition: 0.5s;
-            }
+            margin-right: 10px;
+            img{
+                 display: flex;
+                  justify-content: center;
+                  flex-direction: row;
+                  align-items: center;
+                  width: 40%;
+                  margin-right: 15px;
+                  &:hover{
+                    transform: scale(1.2,1.2);
+                    transition: 0.5s;
+                  }
 
-
-      }
-    }
-  }
-}
-.phoneytablet-submenu{
-  background-color: $fucsia;
-  position: absolute;
-  z-index: 9999;
-  width: 50%;
-  display: none;
-
-    li{
-      margin: 20px;
-      color: white;
-      list-style: none;
-      &:hover > ul{
-        display: block;
-        position: absolute;
-        z-index: 1999;
-        background-color: black;
-      }
-      a{
-        letter-spacing: 4px;
-        list-style: none;
-        text-decoration: none;
-        font-size: 17px;
-        font-family: hermanoalto;
-        color: white;
-        display: block;
-        text-align: center;
-        width: auto;
-        &:active{
-          color:black;
-        }
-      }
-      ul{
-        background-color: $fucsia;
-        display: none;
-        list-style: none;
-        margin: 0;
-        padding: 2px;
-        height: auto;
-        li{
-          margin: 2px;
-          width: auto;
-          &:active{
-            color: $fucsia;
+              }
           }
         }
-        a{
-          font-family: helvetica;
-          letter-spacing: 2px;
-        }
-      }
-    }
+        .buscadorbarra{
+         display: none;
+         position: absolute;
+         right: 0;
+         width: 30%;
+         height: 80px;
+         background-color: $fucsia;
+         z-index: 1999;
+         justify-content: center;
+         flex-direction: row;
+         align-items: center;
+         margin-top: 8px;
+         border-radius: 10px;
+         margin-right: 10px;
 
+         input{
+           height: 40px;
+           width: 70%;
+           border-radius: none;
+           border: none;
+           border-radius: 10px;
+
+
+         }
+         button{
+           margin-left: 5px;
+           height: 40px;
+           width: 20%;
+           background-color: black;
+           color: white;
+           font-family: HermanoAlto;
+           letter-spacing: 3px;
+           border: none;
+           box-shadow: 1px 1px 1px 1px white;
+           border-radius: 10px;
+           outline: none;
+           &:hover{
+             background-color: $verde;
+             color: black;
+           }
+         }
+
+       }
 }
+
+
+
 
 Section{
   @media #{$break-phone}{
@@ -872,29 +853,46 @@ Section{
     grid-column-start: 3;
     grid-column-end: 4;
     height: 100%;
-    align-items: center;
-
-
-    input{
-      font-family: HermanoAlto;
+    align-items: center;}
+    }
+    .input{
+      font-family: helvetica;
       letter-spacing: 2px;
       border: none;
       border-bottom: 2px solid;
       border-bottom-color: $fucsia;
       margin: 15px;
       color: grey;
+      outline: none;
+    }
+    .formulario-seleccionar{
+      font-family: helvetica;
+      letter-spacing: 2px;
+      margin: 15px;
+      color: grey;
+      &::-webkit-file-upload-button{
+        background: $fucsia;
+        color: white;
+        border-radius: 10px;
+
+        &:hover{
+          background: black;
+          color: $fucsia;
+          border-radius: 10px;
+        }
+      }
     }
     textarea{
-      font-family: HermanoAlto;
+      font-family: helvetica;
       letter-spacing: 2px;
       border: none;
       border-bottom: 2px solid;
       border-bottom-color: $fucsia;
       height: 50px;
       margin: 15px;
-
-
+      outline: none;
     }
+
 
     button{
       height: 40px;
@@ -907,18 +905,15 @@ Section{
       border: none;
       margin: 20px;
       border-radius: 10px;
+      outline: none;
       &:hover{
         background-color: $verde;
         color: black;
       }
     }
-    }
   }
-    a{
-      background-color: $fucsia;
-      width: 50%;
-    }
-}
+
+
 .datos{
   display: flex;
   justify-content: center;
