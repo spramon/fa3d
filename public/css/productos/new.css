@@ -1,0 +1,6 @@
+.destacado_colores{
+  display: flex;
+}
+i {
+  cursor: pointer;
+}
