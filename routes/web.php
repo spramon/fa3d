@@ -32,7 +32,7 @@ Route::post('/productos/edit/precio/{id}', 'productosController@precio');
 Route::delete('/productos/delete/{id}', 'productosController@delete');
 Route::post('/productos/new', 'productosController@add');
 Route::get('/productos/{id}', 'productosController@categoria');
-Route::get('/{id}', 'busquedaController@buscador');
+Route::get('/productos/buscar/{id}', 'busquedaController@buscador');
 
 Route::get('/personalizados', function (){
   return view('personalizados');

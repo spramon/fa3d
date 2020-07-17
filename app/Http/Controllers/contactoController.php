@@ -34,8 +34,8 @@ class contactoController extends Controller
         $request->imagen = $imagen;
       }
       $data=$request;
-      Mail::to('fa.impresion3d@gmail.com')->send(new tienesUnMensaje($data));
-      Mail::to($data->email)->send(new recibimosTuMensaje);
+      \Mail::to('fa.impresion3d@gmail.com')->send(new tienesUnMensaje($data));
+      \Mail::to($data->email)->send(new recibimosTuMensaje);
 
       return redirect('/');
     }

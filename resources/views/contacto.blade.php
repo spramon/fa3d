@@ -1,4 +1,9 @@
 @extends('layouts.body_layout')
+@section('gif')
+    <div class="cargando" style="background-color:rgba(0,0,0,0.5)">
+        <img src="/img/gifs/loading_icon.gif" alt="gif-carga" style="width:10vh;">
+    </div>
+@endsection
 @section('container')
 <section>
     <h1>Contactanos</h1>

@@ -3,6 +3,11 @@
 <link rel="stylesheet" href="/css/productos/edit.css">
 <script src="/js/productos/edit.js"></script>
 @endsection
+@section('gif')
+    <div class="cargando" style="background-color:rgba(0,0,0,0.5)">
+        <img src="/img/gifs/loading_icon.gif" alt="gif-carga" style="width:10vh;">
+    </div>
+@endsection
 @section('container')
 
 <div class="modal fade" id="categoriasModal" tabindex="-1" role="dialog" aria-labelledby="categoriasModal" aria-hidden="true">

@@ -5,6 +5,11 @@
 <script src="/js/productos/edit.js"></script>
 @endif
 @endsection
+@section('gif')
+    <div class="cargando" style="background-color:rgba(0,0,0,0.5)">
+        <img src="/img/gifs/loading_icon.gif" alt="gif-carga" style="width:10vh;">
+    </div>
+@endsection
 @section('container')
 <section>
     <div class="modal fade" id="categoriasModal" tabindex="-1" role="dialog" aria-labelledby="categoriasModal" aria-hidden="true">
