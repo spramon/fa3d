@@ -1227,6 +1227,32 @@ Section h4 {
         background-size: contain;
         background-repeat: no-repeat;
         border-radius: 10px; } }
+  .clientes .cliente17 {
+    background-image: url(../img/clientes/clientes17.jpg); }
+    @media (min-width: 320px) {
+      .clientes .cliente17 {
+        width: 115px;
+        height: 204px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
+    @media (min-width: 768px) {
+      .clientes .cliente17 {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
+    @media (min-width: 1024px) {
+      .clientes .cliente17 {
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px; } }
   .clientes .vermasclientes {
     display: flex;
     justify-content: center;
@@ -1413,8 +1439,61 @@ footer .footer2 {
 .clientestodos {
   display: flex;
   justify-content: center;
-  align-items: center; }
-  .clientestodos img {
-    width: 150px;
-    margin: 2px;
-    height: 267px; }
+  align-items: center;
+  flex-wrap: wrap; }
+  @media (min-width: 320px) {
+    .clientestodos img {
+      width: 115px;
+      height: 204px;
+      margin: 1px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 10px; } }
+  @media (min-width: 768px) {
+    .clientestodos img {
+      width: 150px;
+      height: auto;
+      margin: 2px;
+      border-radius: 10px; } }
+  @media (min-width: 1024px) {
+    .clientestodos img {
+      width: 150px;
+      height: auto;
+      margin: 2px;
+      border-radius: 10px; } }
+
+@media (min-width: 320px) {
+  .bannerclientes {
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/historiaphone.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin-bottom: 5px;
+    border-radius: 10px; } }
+
+@media (min-width: 768px) {
+  .bannerclientes {
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/historiaphone.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    margin-bottom: 5px;
+    border-radius: 10px; } }
+
+@media (min-width: 1024px) {
+  .bannerclientes {
+    width: 100%;
+    height: 140px;
+    background-color: black;
+    margin-bottom: 5px;
+    background-image: url(../img/historianotebook.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px; } }
