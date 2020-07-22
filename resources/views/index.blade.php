@@ -141,6 +141,10 @@
         <div class="cliente14"></div>
         <div class="cliente15"></div>
         <div class="cliente16"></div>
+        <a class="vermasclientes" href="#">
+          <p>VER MÁS</p>
+          <img src="/img/clienteicono.png" alt="clientes">
+        </a>
         <div class="bannerclientes">
         </div>
     </div>

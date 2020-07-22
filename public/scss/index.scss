@@ -1018,6 +1018,49 @@ Section{
 
     }
   }
+  .vermasclientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    @media #{$break-phone}{
+      width: 115px;
+      height: 200px;
+      margin: 1px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      background-color: black;
+      box-shadow: 1px 1px 1px $fucsia;
+    }
+    @media #{$break-tablet}{
+      width: 200px;
+      margin:2px;
+      height: 356px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      background-color: black;
+
+    }
+    @media #{$break-notebook}{
+      background-color: $amarillo;
+    width: 150px;
+    margin:2px;
+    height: 267px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-color: black;
+  }
+  p{
+    color: white;
+    font-family: hermanoalto;
+  }
+  img{
+    width: 30%;
+  }
+  }
   .bannerclientes{
     @media #{$break-phone}{
       width: 100%;
@@ -1183,4 +1226,16 @@ footer{
     width: 20%;
     z-index: 10000;
   }
+}
+
+.clientestodos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 150px;
+    margin:2px;
+    height: 267px;
+  }
+
 }

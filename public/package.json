@@ -1,7 +1,6 @@
 {
-  "name": "scss",
+  "name": "sass",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,5 +12,7 @@
   "dependencies": {
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }

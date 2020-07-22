@@ -47,6 +47,7 @@ Route::get('/servicios', function (){
   return view('servicios');
 });
 Route::post('/contacto', 'contactoController@create');
-
-
+Route::get('/clientes', function (){
+  return view('clientes');
+});
 Auth::routes();

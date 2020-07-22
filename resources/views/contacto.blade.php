@@ -38,13 +38,13 @@
                 <strong>{{ $message }}</strong>
             </span>
             @enderror
-            <br>
+            <!--<br>
             <input class="formulario-seleccionar" type="file" name="imagen" value="{{old('imagen')}}">
             @error('imagen')
             <span class="invalid-feedback" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
-            @enderror
+            @enderror-->
             <br>
             <button type="submit" name="enviar">ENVIAR</button>
 

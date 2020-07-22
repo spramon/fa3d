@@ -1227,6 +1227,45 @@ Section h4 {
         background-size: contain;
         background-repeat: no-repeat;
         border-radius: 10px; } }
+  .clientes .vermasclientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media (min-width: 320px) {
+      .clientes .vermasclientes {
+        width: 115px;
+        height: 200px;
+        margin: 1px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-color: black;
+        box-shadow: 1px 1px 1px #F5028a; } }
+    @media (min-width: 768px) {
+      .clientes .vermasclientes {
+        width: 200px;
+        margin: 2px;
+        height: 356px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-color: black; } }
+    @media (min-width: 1024px) {
+      .clientes .vermasclientes {
+        background-color: #Faf400;
+        width: 150px;
+        margin: 2px;
+        height: 267px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        background-color: black; } }
+    .clientes .vermasclientes p {
+      color: white;
+      font-family: hermanoalto; }
+    .clientes .vermasclientes img {
+      width: 30%; }
   @media (min-width: 320px) {
     .clientes .bannerclientes {
       width: 100%;
@@ -1370,3 +1409,12 @@ footer .footer2 {
     margin: auto;
     width: 20%;
     z-index: 10000; }
+
+.clientestodos {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .clientestodos img {
+    width: 150px;
+    margin: 2px;
+    height: 267px; }
