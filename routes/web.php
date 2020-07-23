@@ -14,9 +14,15 @@
 Route::get('/','HomeController@index');
 Route::get('/home','HomeController@home');
 Route::get('/logout','HomeController@logout');
+Auth::routes();
+
+// rutas de contacto
 Route::get('/contacto', function (){
   return view('contacto');
 });
+Route::post('/contacto', 'contactoController@create');
+
+// rutas de productos
 Route::get('/productos', 'productosController@show');
 Route::get('/productos/new', 'productosController@new')->middleware(['auth', 'isAdmin']);;
 Route::get('/productos/edit', 'productosController@edit')->middleware(['auth', 'isAdmin']);;
@@ -34,6 +40,7 @@ Route::post('/productos/new', 'productosController@add');
 Route::get('/productos/{id}', 'productosController@categoria');
 Route::get('/productos/buscar/{id}', 'busquedaController@buscador');
 
+// rutas de otras secciones
 Route::get('/personalizados', function (){
   return view('personalizados');
 });
@@ -46,8 +53,10 @@ Route::get('/comprar', function (){
 Route::get('/servicios', function (){
   return view('servicios');
 });
-Route::post('/contacto', 'contactoController@create');
 Route::get('/clientes', function (){
   return view('clientes');
 });
-Auth::routes();
+// rutas de visitantes
+Route::post('/visitas/ip', 'visitasController@nuevaVisita');
+Route::get('/visitas', 'visitasController@visitas');
+Route::get('/visitas/ajax', 'visitasController@visitasAjax');

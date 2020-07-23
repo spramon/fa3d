@@ -5,6 +5,7 @@
 
     <meta charset="utf-8">
     {{-- <link rel="icon" type="image/png" href="/img/faLogo1-04.png" /> --}}
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="fa impresión 3d es un emprendimiento en donde se venden productos hechos con impresión 3D pintados a mano">
     <meta name="keywords" content="impresion3d, impresiones, 3d, mates, llaveros, groot, starwars, avengers, impresion3d, decoración">
@@ -32,13 +33,11 @@
     <script src="/js/adminNavBar/modernizr-2.6.2.min.js"></script>
     @endif
     <script src="/js/barraDeBusqueda/buscador.js"></script>
+    <script src="/js/visitas/ip.js"></script>
     @yield('css')
 </head>
 <body>
   @yield('gif')
-    <div class="cargando">
-        <img src="/img/gifdecarga.gif" alt="gif-carga" loop>
-    </div>
     <header>
         <nav>
             <div class="menu-mobile">
@@ -190,22 +189,14 @@
             <p>© Todos los derechos reservados</p>
         </div>
     </footer>
+    <input type="hidden" id="ip" name="ip" value="0">
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
-    <script>
-        window.onload = function() {
-            var load = document.querySelector(".cargando");
-            setTimeout(function() {
-                load.style.visibility = "hidden";
-                load.style.opacity = "0";
-            }, 200)
-
-        };
-    </script>
+    @yield('script')
 </body>
 
 </html>
