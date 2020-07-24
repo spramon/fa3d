@@ -128,7 +128,6 @@
                             <li><a href="/productos/personalizados">Personalizados</a></li>
                         </ul>
                     </li>
-                    <li> <a href="/comprar">¿CÓMO COMPRAR?</a></li>
                     @if (Auth::user() && Auth::user()->is_admin)
                     <li>
                         <a href="/visitas">VISITAS</a>
@@ -137,6 +136,9 @@
                         <a href="/logout">LOGOUT</a>
                     </li>
                     @else
+                    <li>
+                        <a href="/comprar">¿CÓMO COMPRAR?</a>
+                    </li>
                     <li>
                         <a href="/contacto">CONTACTO</a>
                     </li>
