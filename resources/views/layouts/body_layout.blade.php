@@ -36,8 +36,9 @@
     <script src="/js/visitas/ip.js"></script>
     @yield('css')
 </head>
+
 <body>
-  @yield('gif')
+    @yield('gif')
     <header>
         <nav>
             <div class="menu-mobile">
@@ -77,13 +78,22 @@
                 <li>
                     <a href="/comprar">¿CÓMO COMPRAR?</a>
                 </li>
+                @if (Auth::user() && Auth::user()->is_admin)
+                <li>
+                    <a href="/visitas">VISITAS</a>
+                </li>
+                <li>
+                    <a href="/logout">LOGOUT</a>
+                </li>
+                @else
                 <li>
                     <a href="/contacto">CONTACTO</a>
                 </li>
-
+                @endif
             </div>
             <div class="buscadorbarra-mobile">
-                <input type="text" name="buscador" value=@if (isset($busqueda)) {{$busqueda}}@else""@endif placeholder=" ¿Qué estás buscando?">
+                <input type="text" name="buscador" value=@if (isset($busqueda)) {{$busqueda}}
+                @else""@endif placeholder=" ¿Qué estás buscando?">
             </div>
             <div class="menuup">
                 <div class="logo">
@@ -119,7 +129,18 @@
                         </ul>
                     </li>
                     <li> <a href="/comprar">¿CÓMO COMPRAR?</a></li>
-                    <li><a href="/contacto">CONTACTO</a> </li>
+                    @if (Auth::user() && Auth::user()->is_admin)
+                    <li>
+                        <a href="/visitas">VISITAS</a>
+                    </li>
+                    <li>
+                        <a href="/logout">LOGOUT</a>
+                    </li>
+                    @else
+                    <li>
+                        <a href="/contacto">CONTACTO</a>
+                    </li>
+                    @endif
 
                 </div>
                 <div class="menuextras">
@@ -127,7 +148,8 @@
                 </div>
             </div>
             <div class="buscadorbarra">
-                <input type="text" name="buscador" value=@if (isset($busqueda)) {{$busqueda}}@else""@endif placeholder=" ¿Qué estás buscando?">
+                <input type="text" name="buscador" value=@if (isset($busqueda)) {{$busqueda}}
+                @else""@endif placeholder=" ¿Qué estás buscando?">
                 <button type="" name="button">BUSCAR</button>
             </div>
             <nav>
