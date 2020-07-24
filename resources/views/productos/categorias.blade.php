@@ -102,3 +102,15 @@
   @endif
 </section>
 @endsection
+@section('script')
+  <script>
+      window.onload = function() {
+          var load = document.querySelector(".cargando");
+          setTimeout(function() {
+              load.style.visibility = "hidden";
+              load.style.opacity = "0";
+          }, 1500)
+
+      };
+  </script>
+@endsection

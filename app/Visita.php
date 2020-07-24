@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Visita extends Model
 {
-  public $table = "productos";
+  public $table = "visitas";
 
   public $timestamps = false;
 

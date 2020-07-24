@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Carbon\Carbon;
+use App\Visita;
 use Illuminate\Http\Request;
 
 class visitasController extends Controller

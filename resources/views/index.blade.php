@@ -1,5 +1,9 @@
 @extends('layouts.body_layout')
-
+@section('gif')
+    <div class="cargando">
+        <img src="/img/gifdecarga.gif" alt="gif-carga" >
+    </div>
+@endsection
 @section('container')
 <section>
     <!-- modo oscuro
@@ -142,7 +146,7 @@
         <div class="cliente15"></div>
         <div class="cliente16"></div>
         <div class="cliente17"></div>
-        <a class="/clientes" href="#">
+        <a class="vermasclientes" href="/clientes">
           <p>VER MÁS</p>
           <img src="/img/clienteicono.png" alt="clientes">
         </a>
@@ -150,4 +154,16 @@
         </div>
     </div>
 </section>
+@endsection
+@section('script')
+  <script>
+      window.onload = function() {
+          var load = document.querySelector(".cargando");
+          setTimeout(function() {
+              load.style.visibility = "hidden";
+              load.style.opacity = "0";
+          }, 3200)
+
+      };
+  </script>
 @endsection
