@@ -129,23 +129,7 @@
     <h4>Nos eligieron...</h4>
     <br>
     <div class="clientes">
-        <div class="cliente1"></div>
-        <div class="cliente2"></div>
-        <div class="cliente3"></div>
-        <div class="cliente4"></div>
-        <div class="cliente5"></div>
-        <div class="cliente6"></div>
-        <div class="cliente7"></div>
-        <div class="cliente8"></div>
-        <div class="cliente9"></div>
-        <div class="cliente10"></div>
-        <div class="cliente11"></div>
-        <div class="cliente12"></div>
-        <div class="cliente13"></div>
-        <div class="cliente14"></div>
-        <div class="cliente15"></div>
-        <div class="cliente16"></div>
-        <div class="cliente17"></div>
+
         <a class="vermasclientes" href="/clientes">
           <p>VER MÁS</p>
           <img src="/img/clienteicono.png" alt="clientes">
@@ -165,5 +149,12 @@
           }, 3200)
 
       };
+      var clientesindex = document.querySelector('.clientes');
+      for (var i = 1; i <= 17; i++) {
+      var vermasclientes = document.querySelector('.vermasclientes');
+      var imgclientes = document.createElement('img');
+      imgclientes.setAttribute('src','/img/clientes/clientes'+i+'.jpg');
+      clientesindex.insertBefore(imgclientes, vermasclientes);
+      }
   </script>
 @endsection

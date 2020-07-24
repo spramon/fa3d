@@ -684,29 +684,32 @@ Section h4 {
 /*CONTACTO.HTML*/
 .contacto {
   width: 95%;
-  margin: auto 2.5% auto 2.5%;
+  margin: auto;
   display: flex;
-  justify-content: space-around; }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;}
   @media (min-width: 320px) {
     .contacto img {
       display: none; } }
   @media (min-width: 1024px) {
     .contacto img {
-      margin-left: 10%;
-      width: 25%;
-      height: 25%;
-      display: inline; } }
+      display: none;} }
   @media (min-width: 320px) {
     .contacto form {
       font-family: helvetica;
-      display: block;
-      width: 100%; } }
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;} }
   @media (min-width: 1024px) {
     .contacto form {
       font-family: helvetica;
       display: block;
-      width: 40%;
-      align-items: center; } }
+      width: 25%;
+      align-items: center;
+      justify-content: center;} }
   .contacto .input {
     font-family: helvetica;
     width: 80%;
@@ -737,16 +740,21 @@ Section h4 {
     @media (min-width: 1024px) {
       .contacto .formulario-seleccionar {
         width: 100%; } }
-  .contacto textarea {
-    width: 100%;
-    font-family: helvetica;
-    letter-spacing: 2px;
-    border: none;
-    border-bottom: 2px solid;
-    border-bottom-color: #F5028a;
-    height: 50px;
-    margin: 15px;
-    outline: none; }
+
+    @media (min-width: 320px){
+    .contacto textarea{
+      width: 80%;
+      font-family: helvetica;
+      letter-spacing: 2px;
+      border: none;
+      border-bottom: 2px solid;
+      border-bottom-color: #F5028a;
+      height: 50px;
+      margin: 15px;
+      outline: none; }}
+    @media (min-width: 1024px) {
+    .contacto textarea {
+        width: 100%;}}
   .contacto button {
     height: 40px;
     margin-left: 5px;
@@ -758,7 +766,7 @@ Section h4 {
     border: none;
     margin: 20px;
     border-radius: 10px;
-    outline: none; }
+    outline: none;}
     .contacto button:hover {
       background-color: #00ff00;
       color: black; }
@@ -792,6 +800,7 @@ Section h4 {
       display: flex;
       flex-direction: row;
       width: 40px;
+      height: auto;
       margin-right: 5px;
       margin-bottom: 3px; }
     .datos li .logos {
@@ -803,6 +812,7 @@ Section h4 {
         @media (min-width: 1024px) {
           .datos li .logos img {
             width: 40px;
+            height: auto;
             margin-right: 5px;
             margin-bottom: 3px; } }
 
@@ -812,448 +822,27 @@ Section h4 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
-  .clientes .cliente1 {
-    background-image: url(../img/clientes/clientes1.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente1 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente1 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente1 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente2 {
-    background-image: url(../img/clientes/clientes2.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente2 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente2 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente2 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente3 {
-    background-image: url(../img/clientes/clientes3.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente3 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente3 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente3 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente4 {
-    background-image: url(../img/clientes/clientes4.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente4 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente4 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente4 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente5 {
-    background-image: url(../img/clientes/clientes5.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente5 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente5 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente5 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente6 {
-    background-image: url(../img/clientes/clientes6.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente6 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente6 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente6 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente7 {
-    background-image: url(../img/clientes/clientes7.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente7 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente7 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente7 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente8 {
-    background-image: url(../img/clientes/clientes8.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente8 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente8 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente8 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente9 {
-    background-image: url(../img/clientes/clientes9.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente9 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente9 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente9 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente10 {
-    background-image: url(../img/clientes/clientes10.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente10 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente10 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente10 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente11 {
-    background-image: url(../img/clientes/clientes11.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente11 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente11 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente11 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente12 {
-    background-image: url(../img/clientes/clientes12.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente12 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente12 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente12 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente13 {
-    background-image: url(../img/clientes/clientes13.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente13 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente13 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente13 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente14 {
-    background-image: url(../img/clientes/clientes14.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente14 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente14 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente14 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente15 {
-    background-image: url(../img/clientes/clientes15.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente15 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente15 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente15 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente16 {
-    background-image: url(../img/clientes/clientes16.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente16 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente16 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente16 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-  .clientes .cliente17 {
-    background-image: url(../img/clientes/clientes17.jpg); }
-    @media (min-width: 320px) {
-      .clientes .cliente17 {
-        width: 115px;
-        height: 204px;
-        margin: 1px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 768px) {
-      .clientes .cliente17 {
-        width: 200px;
-        margin: 2px;
-        height: 356px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
-    @media (min-width: 1024px) {
-      .clientes .cliente17 {
-        width: 150px;
-        margin: 2px;
-        height: 267px;
-        background-size: contain;
-        background-repeat: no-repeat;
-        border-radius: 10px; } }
+  @media (min-width: 320px) {
+    .clientes img {
+      width: 115px;
+      height: 204px;
+      margin: 1px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      border-radius: 10px; } }
+  @media (min-width: 768px) {
+    .clientes img {
+      width: 150px;
+      height: auto;
+      margin: 2px;
+      border-radius: 10px; } }
+  @media (min-width: 1024px) {
+    .clientes img {
+      width: 150px;
+      height: auto;
+      margin: 2px;
+      border-radius: 10px; } }
+
   .clientes .vermasclientes {
     display: flex;
     justify-content: center;
@@ -1292,7 +881,8 @@ Section h4 {
       color: white;
       font-family: hermanoalto; }
     .clientes .vermasclientes img {
-      width: 30%; }
+      width: 30%;
+      height: auto;}
   @media (min-width: 320px) {
     .clientes .bannerclientes {
       width: 100%;

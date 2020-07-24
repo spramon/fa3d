@@ -61,10 +61,3 @@ serviciosmenu.onclick = function submenu(){
     serviciosmenu.querySelector("ul").style.display = "none";
   }
 };
-
-var clientes = document.querySelector('.clientestodos');
-for (var i = 1; i <= 87; i++) {
-var img = document.createElement('img');
-img.setAttribute('src','/img/clientes/clientes'+i+'.jpg');
-clientes.append(img);
-}
